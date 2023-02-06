@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background-color: #faebd7;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 1rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.home {
+  width: 30%;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  background-color: #f8c567;
+  padding: 5px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.home-lg {
+  display: none;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  padding: 0.5rem;
+  border: 3px solid #000;
+  border-bottom: none;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: #f8c567;
+  margin: 1rem 1rem 0 1rem;
+  height: 80vh;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card p {
+  margin: 2rem 1rem;
+}
+
+.image-front {
+  position: absolute;
+  padding: 0 0.5rem;
+  bottom: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.front {
+  position: relative;
+  height: 100%;
+}
+.front .text {
+  text-align: center;
+}
+.front label {
+  margin: 1rem;
+}
+.front input {
+  width: 60px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.front button {
+  border: 2px solid black;
+  background-color: #faebd7;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  font-size: 15px;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+.back p {
+  margin: 2px 10px;
+}
+.back .italics {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+.back ul {
+  margin-top: 15px;
+}
+.back li {
+  margin: 10px 0 0 25px;
+  font-size: 14px;
+}
+
+/* flip button at the bottom */
+.bottom {
+  margin: 0 1rem;
+  height: 10vh;
+  background-color: #ecb235;
+  border: 3px solid black;
+  border-top: none;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+#flip-card {
+  background-color: #ecb235;
+  border: none;
+  letter-spacing: 2px;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.info {
+  position: absolute;
+  right: 1rem;
+  font-size: 2rem;
+  top: 0;
+  text-decoration: none;
+}
+.info a {
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+  line-height: 0.1px;
+}
+
+.info-page {
+  margin: 20vh 1rem;
+}
+.info-page p {
+  margin: 1rem;
+}
+.info-page .copyright {
+  font-size: 0.7rem;
+}
+
+.main {
+  text-align: center;
+  height: 100vh;
+}
+.main h1 {
+  margin-top: 5vh;
+}
+.main h3 {
+  margin-top: 5px;
+}
+
+.link-container {
+  position: relative;
+  height: 60%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-btn {
+  text-align: center;
+  position: relative;
+  background-color: #f8c567;
+  padding: 0.6rem;
+  margin: 0.6rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 821px) {
+  .info-container {
+    border: 3px solid #000;
+    border-radius: 2rem;
+    height: 80vh;
+    min-height: 600px;
+    padding: 1rem;
+    background-color: #ebc57f;
+  }
+  .main-container {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0.4rem;
+    border: 3px solid #000;
+    border-radius: 2rem;
+    background-color: #ebc57f;
+  }
+  .main-container .link-container {
+    height: 45%;
+    margin: 2rem 0;
+  }
+  .main-container .info {
+    position: absolute;
+    display: block;
+    margin-right: 10px;
+  }
+  .container {
+    height: 80vh;
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  .card {
+    min-height: 600px;
+    margin: 0;
+  }
+  .bottom {
+    display: block;
+    margin: 0;
+  }
+  .card-container {
+    margin: auto;
+  }
+  .home {
+    display: none;
+  }
+  .home-lg {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid #000;
+    background-color: #ebc57f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}/*# sourceMappingURL=main.css.map */

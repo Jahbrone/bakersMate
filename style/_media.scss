@@ -1,0 +1,70 @@
+$primary-colour: #000;
+$secondary-colour: #f8c567;
+$secondary-colour-light: #ebc57f;
+$secondary-colour-lighest: #faebd7;
+
+@media screen and (min-width: 821px) {
+  .info-container {
+    border: 3px solid #000;
+    border-radius: 2rem;
+    height: 80vh;
+    min-height: 600px;
+    padding: 1rem;
+    background-color: $secondary-colour-light;
+  }
+  .main-container {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0.4rem;
+    border: 3px solid #000;
+    border-radius: 2rem;
+    background-color: $secondary-colour-light;
+    .link-container {
+      height: 45%;
+      margin: 2rem 0;
+    }
+    .info {
+      position: absolute;
+      display: block;
+      margin-right: 10px;
+    }
+  }
+  //Recipies
+  .container {
+    height: 80vh;
+    width: 50%;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  .card {
+    min-height: 600px;
+    margin: 0;
+  }
+  .bottom {
+    display: block;
+    margin: 0;
+  }
+  .card-container {
+    margin: auto;
+  }
+  .home {
+    display: none;
+  }
+  .home-lg {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid #000;
+    background-color: #ebc57f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}

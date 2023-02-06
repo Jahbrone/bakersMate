@@ -1,0 +1,74 @@
+@import "./config";
+@import "./recipies";
+
+$primary-colour: #000;
+$secondary-colour: #f8c567;
+$secondary-colour-light: #ebc57f;
+$secondary-colour-lighest: #faebd7;
+// Front Page
+
+// Info Button
+
+.info {
+  position: absolute;
+  right: 1rem;
+  font-size: 2rem;
+  top: 0;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    line-height: 0.1px;
+  }
+}
+
+// Info Page
+
+.info-page {
+  margin: 20vh 1rem;
+  p {
+    margin: 1rem;
+  }
+  .copyright {
+    font-size: 0.7rem;
+  }
+}
+
+// Front Page
+
+.main {
+  text-align: center;
+  height: 100vh;
+
+  h1 {
+    margin-top: 5vh;
+  }
+  h3 {
+    margin-top: 5px;
+  }
+}
+.link-container {
+  position: relative;
+  height: 60%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.link-btn {
+  text-align: center;
+  position: relative;
+  background-color: #f8c567;
+  padding: 0.6rem;
+  margin: 0.6rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: $primary-colour;
+  border: 2px solid $primary-colour;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@import "./media";

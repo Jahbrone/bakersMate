@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/icon1.png" />
+    <title>Sourdough</title>
+    <link rel="stylesheet" href="/style/main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <a class="home" href="index.html">HOME</a>
+      <!-- Main Container -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front">
+            <a class="home-lg" href="index.html">HOME</a>
+            <h2>Naan</h2>
+            <p class="text">How many naan breads do you want to make?</p>
+
+            <label for="">Amount:</label>
+            <input type="number" name="naanInput" id="naanInput" />
+            <button id="btn" onclick="naanDough()">Calculate</button>
+            <p class="ingredients" id="naanFlour">Flour:</p>
+            <p class="ingredients" id="naanWater">Water:</p>
+            <p class="ingredients" id="naanYogurt">Yogurt:</p>
+            <p class="ingredients" id="naanSalt">Salt</p>
+            <!----------->
+            <!----------->
+            <!----------->
+            <div class="image-front">
+              <img src="./img/naan.png" width="55px" />
+              <img src="./img/naan.png" width="55px" />
+              <img src="./img/naan.png" width="55px" />
+              <img src="./img/naan.png" width="55px" />
+              <img src="./img/naan.png" width="55px" />
+            </div>
+          </div>
+          <div class="back">
+            <h2>Directions</h2>
+            <p class="italics">
+              Extra ingredients: Yeast, oil, butter, garlic.
+            </p>
+            <ul class="backp">
+              <li>
+                Mix ingredients together and knead to<br />
+                make dough.
+              </li>
+              <li>
+                Cover with light coating of oil and rest until double in size.
+              </li>
+              <li>Divide into equal portions and roll into balls.</li>
+              <li>Heat skillet on high heat until very hot.</li>
+
+              <li>
+                Lightly roll out into naan, about 1/2cm thick. Don't press too
+                hard when rolling.
+              </li>
+              <li>Cook on each side until it puffs up and looks ready.</li>
+              <li>Add garlic butter, herbs, or any other toppings you want.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <button id="flip-card">Flip for instructions</button>
+      </div>
+    </section>
+    <!----------script ----------->
+    <script src="app.js"></script>
+  </body>
+</html>

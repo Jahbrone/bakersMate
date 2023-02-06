@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/icon1.png" />
+    <title>Sourdough</title>
+    <link rel="stylesheet" href="/style/main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <a class="home" href="index.html">HOME</a>
+
+      <!-- Main Container -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front">
+            <a class="home-lg" href="index.html">HOME</a>
+            <h2>Sourdough</h2>
+            <p class="text">Enter the flour weight in grams.</p>
+            <label for="">Flour:</label>
+            <input type="number" name="userInput" id="userInput" />
+            <button id="btn" onclick="sourDough()">Calculate</button>
+            <p class="ingredients" id="water">Water:</p>
+            <p class="ingredients" id="starter">Starter:</p>
+            <p class="ingredients" id="salt">Salt:</p>
+            <div class="image-front">
+              <img src="./img/sourdough.png" width="50px" />
+              <img src="./img/sourdough.png" width="50px" />
+              <img src="./img/sourdough.png" width="50px" />
+              <img src="./img/sourdough.png" width="50px" />
+              <img src="./img/sourdough.png" width="50px" />
+            </div>
+          </div>
+          <div class="back">
+            <h2>Directions</h2>
+            <p class="italics">
+              Extra ingredients: Herbs, garlic, oats, seeds.
+            </p>
+            <ul class="backp">
+              <li>Mix flour, salt and water and leave for 1/2 hour.</li>
+              <li>
+                Add starter and mix in until it is evenly spread through dough.
+              </li>
+              <li>Stretch and fold 3 times over 2 hours.</li>
+              <li>Bulk ferment until it is ready.</li>
+              <li>Shape the dough, or pre shape if needed.</li>
+              <li>Score dough and bake for 30 minutes at 215c.</li>
+              <li>Let cool for at least an hour before cutting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <button id="flip-card">Flip for instructions</button>
+      </div>
+    </section>
+    <!----------script ----------->
+    <script src="app.js"></script>
+  </body>
+</html>

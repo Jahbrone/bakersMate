@@ -1,0 +1,49 @@
+$primary-colour: #000;
+$secondary-colour: #f8c567;
+$secondary-colour-light: #ebc57f;
+$secondary-colour-lighest: #faebd7;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+body {
+  background-color: $secondary-colour-lighest;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 1rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+//Home buttons
+.home {
+  width: 30%;
+  margin: 5px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  background-color: $secondary-colour;
+  padding: 5px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}

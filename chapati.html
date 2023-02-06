@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/icon1.png" />
+    <title>Sourdough</title>
+    <link rel="stylesheet" href="/style/main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <a class="home" href="index.html">HOME</a>
+      <!-- Main Container -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front">
+            <a class="home-lg" href="index.html">HOME</a>
+            <h2>Chapati</h2>
+            <p class="text">How many chapatis do you want to make?</p>
+            <div class="form-container">
+              <label for="">Amount:</label>
+              <input type="number" name="chapatiInput" id="chapatiInput" />
+              <button id="btn" onclick="chapatiDough()">Calculate</button>
+              <p class="ingredients" id="chapatiFlour">Flour:</p>
+              <p class="ingredients" id="chapatiWater">Water:</p>
+              <p class="ingredients" id="chapatiSalt">Salt</p>
+              <!----------->
+              <!----------->
+              <!----------->
+            </div>
+            <div class="image-front">
+              <img src="./img/chapati.png" width="55px" />
+              <img src="./img/chapati.png" width="55px" />
+              <img src="./img/chapati.png" width="55px" />
+              <img src="./img/chapati.png" width="55px" />
+              <img src="./img/chapati.png" width="55px" />
+            </div>
+          </div>
+          <div class="back">
+            <h2>Directions</h2>
+            <p class="italics">Extra ingredients: oil</p>
+            <ul class="backp">
+              <li>
+                Mix ingredients together and knead to<br />
+                make dough.
+              </li>
+              <li>
+                Cover with light coating of oil and rest for at least half an
+                hour.
+              </li>
+              <li>Divide into equal portions and roll into balls.</li>
+              <li>Heat skillet on high heat until very hot.</li>
+
+              <li>
+                Using rolling pin, roll the dough balls out into chapatis.
+              </li>
+              <li>Cook on each side until looking ready.</li>
+              <p class="italics">
+                Tips: Once on pan, press down and make small indents with
+                fingers to help it bubble up. Don't be afraid to flip it
+                multiple times.
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <button id="flip-card">Flip for instructions</button>
+      </div>
+    </section>
+    <!----------script ----------->
+    <script src="app.js"></script>
+  </body>
+</html>

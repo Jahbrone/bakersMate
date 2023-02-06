@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./img/icon1.png" />
+    <title>Sourdough</title>
+    <link rel="stylesheet" href="/style/main.css" />
+  </head>
+  <body>
+    <section class="container">
+      <a class="home" href="index.html">HOME</a>
+      <!-- Main Container -->
+      <div class="card-container">
+        <div class="card">
+          <div class="front">
+            <a class="home-lg" href="index.html">HOME</a>
+            <h2>Bagels</h2>
+            <p class="text">How many bagels do you want to make?</p>
+            <label for="">Amount:</label>
+            <input type="number" name="bagelInput" id="bagelInput" />
+            <button id="btn" onclick="bagelDough()">Calculate</button>
+            <p class="ingredients" id="bagelFlour">Flour:</p>
+            <p class="ingredients" id="bagelWater">Water:</p>
+            <p class="ingredients" id="bagelSalt">Salt:</p>
+            <!---------->
+            <div class="image-front">
+              <img src="./img/bagel.png" width="55px" />
+              <img src="./img/bagel.png" width="55px" />
+              <img src="./img/bagel.png" width="55px" />
+              <img src="./img/bagel.png" width="55px" />
+              <img src="./img/bagel.png" width="55px" />
+            </div>
+          </div>
+          <div class="back">
+            <h2>Directions</h2>
+            <p class="italics">
+              Extra ingredients: Yeast, eggwhite, maple syrup, sesame seeds
+              (optional).
+            </p>
+            <ul class="backp">
+              <li>
+                Mix ingredients together with yeast <br />
+                and knead to make dough.
+              </li>
+              <li>
+                Cover and leave until doubled in size. <br />
+                Around 1-2hrs.
+              </li>
+              <li>Boil a large pot of water with a squirt of syrup.</li>
+              <li>Divide dough into equal parts and shape into bagels.</li>
+
+              <li>Boil bagels 1 minute each side</li>
+              <li>
+                Baste with eggwhite and add toppings (salt/sesame, seeds etc)
+              </li>
+              <li>Bake for 20-25 minutes at 220c until golden brown.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <button id="flip-card">Flip for instructions</button>
+      </div>
+    </section>
+    <!----------script ----------->
+    <script src="app.js"></script>
+  </body>
+</html>
