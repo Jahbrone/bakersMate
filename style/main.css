@@ -171,15 +171,13 @@ li a {
 .info {
   position: absolute;
   right: 1rem;
-  font-size: 2rem;
-  top: 0;
-  text-decoration: none;
+  top: 1rem;
+  font-size: 1rem;
 }
 .info a {
   text-decoration: none;
   color: black;
-  font-size: 4rem;
-  line-height: 0.1px;
+  font-size: 1.5rem;
 }
 
 .info-page {
@@ -187,9 +185,10 @@ li a {
 }
 .info-page p {
   margin: 1rem;
+  font-size: 1rem;
 }
 .info-page .copyright {
-  font-size: 0.7rem;
+  font-size: 0rem;
 }
 
 .main {

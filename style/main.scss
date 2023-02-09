@@ -12,15 +12,13 @@ $secondary-colour-lighest: #faebd7;
 .info {
   position: absolute;
   right: 1rem;
-  font-size: 2rem;
-  top: 0;
-  text-decoration: none;
+  top: 1rem;
+  font-size: 1rem;
 
   a {
     text-decoration: none;
     color: black;
-    font-size: 4rem;
-    line-height: 0.1px;
+    font-size: 1.5rem;
   }
 }
 
@@ -30,9 +28,10 @@ $secondary-colour-lighest: #faebd7;
   margin: 20vh 1rem;
   p {
     margin: 1rem;
+    font-size: 1rem;
   }
   .copyright {
-    font-size: 0.7rem;
+    font-size: 0rem;
   }
 }
 
