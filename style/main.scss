@@ -1,5 +1,5 @@
-@import "./config";
-@import "./recipies";
+@import "_config";
+@import "_recipies";
 
 $primary-colour: #000;
 $secondary-colour: #f8c567;
@@ -71,4 +71,4 @@ $secondary-colour-lighest: #faebd7;
   letter-spacing: 2px;
 }
 
-@import "./media";
+@import "_media";
